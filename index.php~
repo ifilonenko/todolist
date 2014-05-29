@@ -31,8 +31,8 @@
             <div>
               <h1>This is your To Do List</h1>
               <form onSubmit ={this.handleSubmit}>
-              <input type="text" placeholder = 'Task name' value={this.state.assignment} onChange={this.onChangeAssignment} />
-              <input type="text" placeholder='Deadline' value={this.state.date} onChange={this.onChangeDate} />
+              <input type="text" value={this.state.assignment} onChange={this.onChangeAssignment} />
+              <input type="text" value={this.state.date} onChange={this.onChangeDate} />
               <button>Add</button>
               </form>
               <ToDoList data={this.state.data} />
